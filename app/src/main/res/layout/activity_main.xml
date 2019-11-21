@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/distance">
+    android:background="@drawable/distance"
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btClearAll"
+        android:id="@+id/btClear"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="126dp"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btClear"
+        android:id="@+id/btClearAll"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
@@ -137,14 +137,15 @@
         android:id="@+id/btSum"
         android:layout_width="70dp"
         android:layout_height="50dp"
-        android:layout_marginTop="435dp"
-        android:layout_marginBottom="371dp"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="373dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="308dp"
         android:backgroundTint="#00BCD4"
         android:text="+"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

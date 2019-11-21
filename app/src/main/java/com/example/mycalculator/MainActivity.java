@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private double resultado;
     private String aux;
     private String[] operacion;
-    private char accion = 'f';
-    private boolean borrado = false;
+    private char accion;
+    private boolean borrado = true;
     private boolean infinito = false;
 
 
@@ -179,7 +179,9 @@ public class MainActivity extends AppCompatActivity {
         dec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                operacionText.append(".");
+                if (accion == 'f') {
+                    operacionText.append(".");
+                }
             }
         });
 
@@ -198,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 operacionText.setText("");
                 resultadoText.setText("");
+                accion = '_';
             }
         });
 
